@@ -6,10 +6,10 @@ var app = express();
 app.use(morgan('combined'));
 
 var articleOne={
-    title: 'Article One | Gangesh Dhar'
-    heading:'Article One'
-    date:'Aug 7,2017'
-    content=`
+    title: 'Article One | Gangesh Dhar',
+    heading:'Article One',
+    date:'Aug 7,2017',
+    content:   `
                 <p>
                     This is the content for my first article.This is the content for my first article.This is the content for my first articl.This is the content for my first article.This is the content for my first article.
                 </p>
