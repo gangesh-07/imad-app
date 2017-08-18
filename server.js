@@ -108,7 +108,7 @@ app.get('/', function (req, res) {
 });
 
 var pool=new Pool(config);
-app.get('/test-db', function(req,res){
+/*app.get('/test-db', function(req,res){
     
     pool.query('SELECT * FROM test',function(err,result){
         if(err){
@@ -117,6 +117,17 @@ app.get('/test-db', function(req,res){
             res.send(JSON.stringfy(result));
         }
     });
+});*/
+app.get('/testdb', function (req, res) {
+client.query('SELECT * from user1', (err, result) => {
+if(err){
+res.send("Error in getting records from DB"+err.toString());
+}else{
+res.send(JSON.stringify(result));
+}
+
+});
+
 });
 
 app.get('/:articleName', function (req, res) {
