@@ -9,7 +9,7 @@ var Pool=require('pg').Poll;
 var config={
     user:'gangesh97dhar',
     database:'gangesh97dhar',
-    host:'db.imad.hasura-app.io'
+    host:'db.imad.hasura-app.io',
     port:'5432',
     password:process.env.DB_PASSWORD
 };
