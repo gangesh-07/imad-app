@@ -119,11 +119,11 @@ var pool=new Pool(config);
     });
 });*/
 app.get('/testdb', function (req, res) {
-pool.query('SELECT * from test', (err, result.rows) => {
+pool.query('SELECT * from test', (err, result) => {
 if(err){
 res.send("Error in getting records from DB"+err.toString());
 }else{
-res.send(JSON.stringify(result));
+res.send(JSON.stringify(result.rows));
 }
 
 });
