@@ -45,7 +45,7 @@ submit.onclick=function(){
    console.log(username);
    console.log(password);
    request.open('POST','http://gangesh97dhar.imad.hasura-app.io/login',true);
-   request.setRequestheader('Current-Type','application/json');
+   request.setRequestHeader('Current-Type','application/json');
    request.send(JSON.stringify({username: username, password: password}));
     
 };
