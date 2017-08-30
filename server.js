@@ -117,7 +117,7 @@ function hash(input,salt){
 }
 
 app.get('/hash/:input', function (req, res) {
-  var hashedString=hash(req.params.input,'loveyou');
+  var hashedString=hash(req.params.input,'love52you');
   res.send(hashedString);
 });
 //var pool=new Pool(config);
