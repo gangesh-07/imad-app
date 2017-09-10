@@ -48,7 +48,7 @@ var articles={
     
 },
 'article-three':{
-    title: 'Article Three | Gangesh Dhar',
+      title: 'Article Three | Gangesh Dhar',
     heading:'Article Three',
     date:'Oct 7,2017',
     content:   `
