@@ -42,8 +42,8 @@ submit.onclick=function(){
         
     };
     
-   var username=document.getElementById('username');
-   var password=document.getElementById('password');
+   var username=document.getElementById('username').value;
+   var password=document.getElementById('password').value;
    console.log(username);
    console.log(password);
    request.open('POST','http://gangesh97dhar.imad.hasura-app.io/login',true);
